@@ -1,4 +1,6 @@
 import { PokemonGrid, PokemonsResponse, SimplePokemon } from "@/pokemons";
+import { FavoritePokemons } from "@/pokemons/components/FavoritePokemons";
+import { IoHeartOutline } from "react-icons/io5";
 
 
 export const metadata = {
@@ -16,8 +18,11 @@ export default async function PokemonsPage() {
       {/* {
         JSON.stringify( pokemons )
       } */}
-      <PokemonGrid pokemons={ [] }/>
+      {/* <PokemonGrid pokemons={ [] }/> */}
+      <FavoritePokemons />
+      {/* <NotFavorites /> */}
 
     </div>
   );
 }
+
