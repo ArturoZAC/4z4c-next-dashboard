@@ -6,7 +6,7 @@ export const PokemonGrid = ( {pokemons}: { pokemons: SimplePokemon[]}) => {
     <div className="flex flex-wrap gap-10 items-center justify-center">
       {
         pokemons?.map(poke => (
-          <PokemonCard key={poke.id} pokemon={poke}/>
+          <PokemonCard key={poke?.id} pokemon={poke}/>
         ))
       }
     </div>
